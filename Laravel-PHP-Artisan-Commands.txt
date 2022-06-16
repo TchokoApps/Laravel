@@ -9,4 +9,8 @@ php artisan config:cache
 php artisan cache:clear
 php artisan view:clear
 
+// create model and table
+php artisan make:model HomeSlide -m
+
+
 
