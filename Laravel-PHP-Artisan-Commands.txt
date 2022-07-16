@@ -1,7 +1,11 @@
+// run app
 php artisan serve
 
 php artisan make:controller AdminController --resource
 php artisan make:controller Backend/AdminController --resource
+
+php artisan make:controller Frontend/HomeSliderController
+
 
 php artisan route list
 
@@ -11,6 +15,20 @@ php artisan view:clear
 
 // create model and table
 php artisan make:model HomeSlide -m
+
+// migrate table
+php artisan migrate
+
+// image resizer
+https://image.intervention.io/v2/introduction/installation
+
+// create seeder
+php artisan make:seeder SuppliersTableSeeder
+
+// Run seeder
+php artisan migrate:fresh --seed
+
+
 
 
 
